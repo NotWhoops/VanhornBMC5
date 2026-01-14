@@ -9,7 +9,7 @@ namespace VanhornBMC5.Services
     {
         public string ReverseItAlphanumberic(string words, int numbers)
         {
-            return $"{numbers} {words}";
+            return $"You entered {words} and {numbers} reversed is {numbers} and {words}";
         } 
     }
 }
