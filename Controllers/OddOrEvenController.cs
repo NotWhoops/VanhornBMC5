@@ -11,6 +11,18 @@ namespace VanhornBMC5.Controllers
     [Route("api/[controller]")]
     public class OddOrEvenController : ControllerBase
     {
-        
+        private readonly OddOrEvenServices _oddorevenServices;
+
+            public OddOrEvenController(OddOrEvenServices oddorevenServices)
+            {
+                _oddorevenServices = oddorevenServices;
+            }
+            [HttpGet]
+            [Route("OddOrEvenServices/{num}")]
+            public string OddOrEvenServices(int num)
+            {
+                return _oddorevenServices.
+                OddOrEven(num);
+            }
     }
 }
