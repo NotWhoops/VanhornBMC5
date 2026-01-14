@@ -25,6 +25,5 @@ namespace VanhornBMC5.Controllers
                 return _madLibServices.
                 MadLib(noun, verb, adjective, pronoun, adverb);
             }
-        
     }
 }

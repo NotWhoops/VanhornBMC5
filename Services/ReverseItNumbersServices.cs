@@ -7,6 +7,9 @@ namespace VanhornBMC5.Services
 {
     public class ReverseItNumbersServices
     {
-        
+        public string ReverseItNumbers(int numbers)
+        {
+            return $"{numbers}";
+        }
     }
 }
