@@ -19,7 +19,7 @@ namespace VanhornBMC5.Controllers
             }
             [HttpGet]
             [Route("ReverseItNumbersServices/{numbers}")]
-            public string ReverseItAlphanumericServices(string words, int numbers)
+            public string ReverseItNumbersServices(int numbers)
             {
                 return _reverseitNumbersServices.
                 ReverseItNumbers(numbers);
